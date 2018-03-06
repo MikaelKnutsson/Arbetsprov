@@ -1,0 +1,168 @@
+.app {
+  background-color: #23519b;
+  background: linear-gradient(to bottom right, #23519b, #2857a3);
+  margin: 0 auto;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+  list-style: none;
+  cursor: pointer;
+}
+
+.app-header {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.app-search {
+  height: 50px;
+  width: 300px;
+  border-radius: 5px;
+  border-color: transparent transparent;
+  background-color: #dee0e2;
+  color: #f7f9f7;
+  display: block;
+  margin: 0 auto;
+}
+
+.list-wrapper {
+  text-align: center;
+  /* background-color: #2857a3; */
+  padding-top: 15px;
+}
+
+.list-wrapper-selected {
+  text-align: center;
+  background-color: #2857a3;
+}
+
+input[type="search"] {
+  background: url(./UI/assets/search.svg) no-repeat scroll 10px 15px;
+  padding-left: 30px;
+  border: 1px dotted #999;
+  border-radius: 0;
+  height: 100%;
+  width: 100%;
+  border-color: transparent transparent;
+  background-color: #9dc7db;
+  border-radius: 5px;
+  color: #f7f9f7;
+  font-size: 15px;
+  -webkit-appearance: none;
+}
+
+#list-results {
+  background-color: #9dc7db;
+  opacity: 0.75;
+  width: 50%;
+  margin: 0 auto;
+  border-color: transparent transparent;
+  border-radius: 5px;
+}
+
+#selected-results {
+  color: white;
+}
+
+.results-populated {
+  padding-top: 5px;
+  padding-right: 40px;
+}
+
+.results-populated:hover,
+.results-populated:focus {
+  color: #23519b;
+  transition: all 0.5s ease;
+}
+
+.results-populated:hover hr,
+.results-populated:focus hr {
+  text-align: center;
+  display: block;
+  border-top: 0.1 solid blue;
+}
+
+.selectedItems {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  left: 0;
+}
+
+.selectedItems:hover,
+.selectedItems:focus {
+  background-color: #2d61b5;
+  opacity: 0.9;
+  display: block;
+  margin: 0 auto;
+  margin-left: -40px;
+}
+
+.deleteButton {
+  background: #f5f5f5;
+  text-align: center;
+  width: 18px;
+  height: 18px;
+  border-radius: 100%;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+  color: #5e6268;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.deleteButton:hover {
+  background: #2d61b5;
+  color: white;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+}
+
+.deleteButtonDiv {
+  background-color: #a5383d;
+  display: none;
+  height: 100%;
+  float: right;
+  margin-top: -20px;
+  padding: 20px 25px 18px 25px;
+}
+
+.selectedItems:hover .deleteButtonDiv {
+  display: inline;
+}
+
+@media only screen and (max-width: 768px) {
+  input[type="search"] {
+    background: url(./UI/assets/search.svg) no-repeat scroll 10px 10px;
+    padding-left: 30px;
+    border: 1px dotted #999;
+    border-radius: 0;
+    height: 100%;
+    width: 100%;
+    border-color: transparent transparent;
+    background-color: #9dc7db;
+    border-radius: 5px;
+    color: #f7f9f7;
+    font-size: 12px;
+    -webkit-appearance: none;
+  }
+
+  .app-search {
+    height: 40px;
+    width: 200px;
+    border-radius: 5px;
+    border-color: transparent transparent;
+    background-color: #dee0e2;
+    color: #f7f9f7;
+    display: block;
+    margin: 0 auto;
+  }
+}
